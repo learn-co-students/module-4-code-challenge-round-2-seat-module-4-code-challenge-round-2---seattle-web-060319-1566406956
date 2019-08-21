@@ -38,4 +38,4 @@ class AccountContainer extends Component {
   }
 }
 
-export default AccountContainer
+export default AccountContainer;

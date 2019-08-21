@@ -4,7 +4,7 @@ const TransactionsList = (props) => {
   
   const filteredSearch = () => {
     return props.transactions.filter(transaction => {
-    return transaction.description.includes(props.filteredTransaction)
+    return transaction.description.toLowerCase().includes(props.filteredTransaction.toLowerCase())|| transaction.category.toLowerCase().includes(props.filteredTransaction.toLowerCase())
     })
   }
 
